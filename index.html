@@ -3,95 +3,178 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fatih Karaca – Portfolio</title>
+  <meta name="description" content="Fatih Karaca — Software developer at Hive Helsinki. Java, Spring Boot, REST APIs, Docker, and backend-focused projects." />
+  <title>Fatih Karaca — Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Fatih Karaca</h1>
-      <nav>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="#">Fatih Karaca</a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
         <a href="#about">About</a>
+        <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
+        <div class="nav-social">
+          <a href="https://github.com/Fathkrc" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.11 0 0 .67-.21 2.2.82a7.65 7.65 0 012 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.91.08 2.11.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/Fathkrc" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.3c-.97 0-1.75-.79-1.75-1.75s.79-1.75 1.75-1.75 1.75.79 1.75 1.75-.79 1.75-1.75 1.75zm13.5 11.3h-3v-5.6c0-3.4-4-3.1-4 0v5.6h-3v-10h3v1.5c1.4-2.58 7-2.77 7 2.47v6.03z"/></svg>
+          </a>
+        </div>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <section id="about">
-        <h2>About Me</h2>
-        <p> Java Software Engineer with a strong focus on backend development and building robust, scalable applications. Skilled in Java, Spring Boot, RESTful APIs, and working with various databases including relational and NoSQL systems. 
-            <br>Experienced with Node.js and Express.js, and currently expanding skills in .NET development. Proficient in using Docker, Git, Kafka and modern development tools. Also familiar with front-end technologies like HTML, CSS, JavaScript, and React. 
-            <br> Former Police Intendant with proven leadership, adaptability, and problem-solving abilities—now bringing these strengths into software engineering and collaborative development environments.</p>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="wrap hero-inner">
+        <p class="hero-kicker">Software developer · Hive Helsinki</p>
+        <h1 id="hero-title" class="hero-title">Backend-first. Built to scale.</h1>
+        <p class="hero-lede">
+          Software developer currently studying at Hive Helsinki. Experienced with Java, Spring Boot, REST APIs, Docker, and modern backend development workflows. Strong problem-solving, collaboration, and adaptability skills backed by previous leadership experience.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View projects</a>
+          <a class="btn btn-ghost" href="Resume.pdf" download>Download resume</a>
+          <a class="btn btn-ghost" href="mailto:karacaafatih@gmail.com">Email me</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap content-columns">
+      <section id="about" class="section reveal" aria-labelledby="about-heading">
+        <h2 id="about-heading" class="section-title">About</h2>
+        <div class="prose card">
+          <p>
+            Software developer currently studying at <strong>Hive Helsinki</strong>. Experienced with <strong>Java</strong>, <strong>Spring Boot</strong>, REST APIs, <strong>Docker</strong>, and modern backend development workflows.
+          </p>
+          <p>
+            Strong problem-solving, collaboration, and adaptability skills backed by previous leadership experience.
+          </p>
+        </div>
       </section>
 
-      <section id="projects">
-        <h2>Projects</h2>
-        <ul class="project-list">
-          <li>
-            <strong>MeowMatch</strong> – <a href="https://github.com/Fathkrc/meowmatch" target="_blank">GitHub Repo</a><br />
-            REST API for a Tinder-style cat matching app using Java, Spring Boot, MongoDB, Docker.
+      <section id="skills" class="section reveal" aria-labelledby="skills-heading">
+        <h2 id="skills-heading" class="section-title">Stack &amp; tools</h2>
+        <ul class="skill-chips" aria-label="Technologies">
+          <li>Java</li>
+          <li>Spring Boot</li>
+          <li>Kotlin</li>
+          <li>REST APIs</li>
+          <li>MongoDB</li>
+          <li>SQL</li>
+          <li>Docker</li>
+          <li>Kafka</li>
+          <li>Git</li>
+          <li>Node.js</li>
+          <li>React</li>
+          <li>Scala</li>
+          <li>Apache Spark</li>
+          <li>.NET</li>
+        </ul>
+      </section>
+
+      <section id="projects" class="section section-wide reveal" aria-labelledby="projects-heading">
+        <h2 id="projects-heading" class="section-title">Projects</h2>
+        <ul class="project-grid">
+          <li class="project-card">
+            <div class="project-card-top">
+              <h3 class="project-name">MeowMatch</h3>
+              <a class="project-link" href="https://github.com/Fathkrc/meowmatch" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+            <p class="project-desc">REST API for a Tinder-style cat matching app—containerized workflow and document storage.</p>
+            <ul class="project-tags">
+              <li>Java</li>
+              <li>Spring Boot</li>
+              <li>MongoDB</li>
+              <li>Docker</li>
+            </ul>
           </li>
-          <li>
-            <strong>Library Management System</strong> – <a href="https://github.com/Fathkrc/java_react_lib" target="_blank">GitHub Repo</a><br />
-            Full-stack app using Java, Kotlin, and React with role-based access , management and  review system.
+          <li class="project-card">
+            <div class="project-card-top">
+              <h3 class="project-name">Library Management</h3>
+              <a class="project-link" href="https://github.com/Fathkrc/java_react_lib" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+            <p class="project-desc">Full-stack library app with roles, management flows, and a review system.</p>
+            <ul class="project-tags">
+              <li>Java</li>
+              <li>Kotlin</li>
+              <li>React</li>
+            </ul>
           </li>
-          <li>
-            <strong>Emote Generator</strong> – <a href="https://github.com/Fathkrc/emotegenerator" target="_blank">GitHub Repo</a><br />
-            CLI tool for generating emoji-style reactions for chat or UI integration. Built with Node.js.
+          <li class="project-card">
+            <div class="project-card-top">
+              <h3 class="project-name">Emote Generator</h3>
+              <a class="project-link" href="https://github.com/Fathkrc/emotegenerator" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+            <p class="project-desc">CLI for generating emoji-style reactions for chat or UI integrations.</p>
+            <ul class="project-tags">
+              <li>Node.js</li>
+            </ul>
           </li>
-          <li>
-            <strong>Intensive Data Analyzing</strong><br />
-            Scala + Apache Spark project for analyzing smart energy data as part of the Tampere University <em>Data Engineering</em> course. Focused on energy consumption and production patterns in smart grid environments under the Spark framework.
+          <li class="project-card">
+            <div class="project-card-top">
+              <h3 class="project-name">Smart energy analytics</h3>
+              <span class="project-link project-link-muted">Course project</span>
+            </div>
+            <p class="project-desc">Scala and Apache Spark analysis of smart grid consumption and production patterns (Tampere University, Data Engineering).</p>
+            <ul class="project-tags">
+              <li>Scala</li>
+              <li>Spark</li>
+            </ul>
           </li>
         </ul>
       </section>
 
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:karacaafatih@gmail.com">karacaafatih@gmail.com</a></p>
-        <p>Phone: +358 46 944 9777</p>
-        <p>Location: Espoo, Finland</p>
-        <a class="resume-button" href="Resume-09-2025.pdf" download>📄 Download Resume</a>
+      <section id="contact" class="section reveal" aria-labelledby="contact-heading">
+        <h2 id="contact-heading" class="section-title">Contact</h2>
+        <div class="contact-grid">
+          <a class="contact-card" href="mailto:karacaafatih@gmail.com">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">karacaafatih@gmail.com</span>
+          </a>
+          <a class="contact-card" href="tel:+358469449777">
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">+358 46 944 9777</span>
+          </a>
+          <div class="contact-card contact-card-static">
+            <span class="contact-label">Location</span>
+            <span class="contact-value">Espoo, Finland</span>
+          </div>
+        </div>
+        <a class="btn btn-primary contact-resume" href="Resume.pdf" download>Download resume (PDF)</a>
       </section>
-    </main>
+    </div>
+  </main>
 
-    <footer>
-      <p>© 2025 Fatih Karaca</p>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© 2026 Fatih Karaca</p>
       <div class="footer-links">
-        <a href="https://github.com/Fathkrc" target="_blank" aria-label="GitHub">
-          <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 16 16" fill="#ccc">
-            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 
-            2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 
-            0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
-            -.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87
-            2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64
-            -3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08
-            -2.11 0 0 .67-.21 2.2.82a7.65 7.65 0 012 0c1.53-1.04
-            2.2-.82 2.2-.82.44 1.1.16 1.91.08
-            2.11.51.56.82 1.27.82 2.15 0 3.07-1.87
-            3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01
-            1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013
-            0 0016 8c0-4.42-3.58-8-8-8z"/>
-          </svg>
+        <a href="https://github.com/Fathkrc" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" height="22" width="22" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.11 0 0 .67-.21 2.2.82a7.65 7.65 0 012 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.91.08 2.11.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
         </a>
-        <a href="https://linkedin.com/in/Fathkrc" target="_blank" aria-label="LinkedIn">
-          <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" fill="#ccc">
-            <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 
-            2.76 2.24 5 5 5h14c2.76 0 5-2.24 
-            5-5v-14c0-2.76-2.24-5-5-5zm-11 
-            19h-3v-10h3v10zm-1.5-11.3c-.97 
-            0-1.75-.79-1.75-1.75s.79-1.75 
-            1.75-1.75 1.75.79 
-            1.75 1.75-.79 1.75-1.75 
-            1.75zm13.5 11.3h-3v-5.6c0-3.4-4-3.1-4 
-            0v5.6h-3v-10h3v1.5c1.4-2.58 
-            7-2.77 7 2.47v6.03z"/>
-          </svg>
+        <a href="https://linkedin.com/in/Fathkrc" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" height="22" width="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.3c-.97 0-1.75-.79-1.75-1.75s.79-1.75 1.75-1.75 1.75.79 1.75 1.75-.79 1.75-1.75 1.75zm13.5 11.3h-3v-5.6c0-3.4-4-3.1-4 0v5.6h-3v-10h3v1.5c1.4-2.58 7-2.77 7 2.47v6.03z"/></svg>
         </a>
       </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
 </body>
 </html>
